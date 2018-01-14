@@ -1,10 +1,10 @@
 ---
-title: "Who Is Jamalbelilet"
-date: 2018-01-13T16:24:11+01:00
+title: Who Is Jamalbelilet
+date: 2018-01-13 16:24:11 +0100
 featured_image: "/img/what-is-mean-class.png"
-draft: false
----
+type: ionic
 
+---
 ## Exercitation id mollit laborum enim adipisicing et fugiat ex in ullamco dolor culpa.
 
 
