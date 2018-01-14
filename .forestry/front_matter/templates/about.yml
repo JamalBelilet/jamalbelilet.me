@@ -1,0 +1,33 @@
+---
+hide_body: false
+fields:
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: static
+- name: page
+  label: Page
+  type: text
+  hidden: false
+  default: static/single.html"
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: About me
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: About JamalBelilet - Front-end web developer
+- name: menu
+  label: Menu
+  type: text
+  hidden: true
+  default: main
+- name: weight
+  label: Weight
+  type: text
+  hidden: false
+  default: '1'
