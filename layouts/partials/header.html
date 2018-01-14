@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+
+    <!-- <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/menu-toggle.js"></script>
+
+</head>
+
+<body class="site">
+
+    <!-- header start -->
+    <header class="header">
+        <h1 class="site-title">BETTER BY
+            <span>JAMAL</span>BELILET</h1>
+        <button class="menu-toggle" id="menu-toggle">
+            <img src="/icon/menu.svg" alt="menu-toggle">
+        </button>
+    </header>
+    <!--header end-->
+
+    <div class="main-aside" id="side-menu">
+        <h2 class="site-logo">
+            <a href="/">
+                <span>JAMAL</span>BELILET</a>
+        </h2>
+
+        <!-- sidebar start -->
+        <aside class="aside">
+            <div id="sidebar" class="nav-collapse">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+
+                    <li class="sub-menu {{if $currentPage.HasMenuCurrent " main " . }} active{{end}}">
+                        <a href="javascript:;" class="">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            {{ range .Children }}
+                            <li{{if $currentPage.IsMenuCurrent "main" . }} class="active" {{end}}>
+                                <a href="{{.URL}}"> {{ .Name }} </a>
+                    </li>
+                    {{ end }}
+                    </ul>
+                    {{else}}
+                    <li class='{{if eq $currentPage.URL .URL }} active {{end}}'>
+                        <a href="{{.URL}}">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                        {{end}}
+                    </li>
+                    {{end}}
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <footer class="footer">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="http://github.com/jamalbelilet">
+                            <img src="/icon/github.svg" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://linkedin.com/in/djamaleddine-belilet-252894155/">
+                            <img src="/icon/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/jamalbelilet">
+                            <img src="/icon/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com/jamalbelilet">
+                            <img src="/icon/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">© 2013–2018 Copyright JamalBelilet. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <main class="main-content">

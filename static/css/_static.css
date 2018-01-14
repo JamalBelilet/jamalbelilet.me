@@ -1,0 +1,242 @@
+.static {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.2fr;
+  grid-template-rows: minmax(auto, 85%);
+  color: #535556;
+}
+
+.static.static-contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #535556;
+}
+
+.static .jamalbelilet-img {
+  width: auto;
+  max-height: calc(95vh - 20vh);
+  grid-column: 1/2;
+}
+
+.static .jamalbelilet-img.small {
+  display: none;
+}
+
+.static .static-content {
+  margin-left: 3em;
+  grid-column: 2/3;
+}
+.static .static-content h2,
+.static .static-content h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.static .static-content ul {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.static .static-content ul li {
+  font-size: 80%;
+  font-weight: 500;
+}
+
+.static .static-content a {
+  font-size: 85%;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.static .contact-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 4fr 0.8fr;
+}
+
+.static .contact-form input,
+.static .contact-form textarea {
+  padding: 0.8em;
+  color: #2e2e2e;
+  font-weight: 500;
+  margin: 0 1em 1em 0;
+
+  grid-column: 2 span;
+}
+
+.static .contact-form input::placeholder,
+.static .contact-form textarea::placeholder {
+  color: #8f8f8f;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: Roboto;
+}
+
+.static .contact-form textarea {
+  grid-column: 4 span;
+}
+
+.static .contact-form button {
+  color: #2e2e2e;
+  grid-column: 2 span;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  background: transparent;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.static .contact-form button span {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+.skills {
+  margin-left: 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills .skill {
+  margin-right: 1em;
+}
+
+.skills .skill > img {
+  width: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.skills .skill > h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.skills .skill > p {
+  margin: 0;
+  padding: 0;
+  font-size: 65%;
+}
+
+.skills .skill ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.skills .skill li img {
+  width: 1em;
+  margin: 0.1em;
+  padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .static {
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: minmax(auto, 85%) auto;
+  }
+
+  .static.static-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #535556;
+  }
+
+  .static.static-contact .jamalbelilet-img {
+    width: 90%;
+    grid-column: 1/2;
+    display: none;
+  }
+
+  .static.static-contact .jamalbelilet-img.small {
+    width: 90%;
+    grid-column: 1/2;
+    margin-left: 3em;
+    display: block;
+  }
+
+  .static.static-contact .static-content {
+    margin-left: 3em;
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .static {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, 85%) auto auto;
+  }
+
+  .static.static-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #535556;
+  }
+
+  .static .jamalbelilet-img {
+    width: 90%;
+    grid-column: 1/2;
+    display: none;
+  }
+
+  .static .jamalbelilet-img.small {
+    width: 90%;
+    grid-column: 1/2;
+    margin-left: 3em;
+    display: block;
+  }
+
+  .static .static-content {
+    margin-left: 3em;
+    grid-column: 1/2;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .static.static-contact {
+    padding-bottom: 3em;
+  }
+
+  .static .jamalbelilet-img.small,
+  .static.static-contact .jamalbelilet-img.small {
+    margin-left: 1.5em;
+  }
+
+  .static .static-content,
+  .static.static-contact .static-content {
+    margin-left: 1.5em;
+  }
+
+  .skills {
+    margin-left: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em 3em;
+  }
+  .skill {
+    margin: 1em auto;
+  }
+}

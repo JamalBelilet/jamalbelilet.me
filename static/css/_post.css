@@ -1,0 +1,35 @@
+
+.post {
+    margin: 1em;
+    padding: 1em;
+}
+
+.post .image.featured img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.post .post-meta {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .1em;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.post .post-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.post .post-summary {
+  font-size: 90%;
+  margin-bottom: 1em;
+}
+

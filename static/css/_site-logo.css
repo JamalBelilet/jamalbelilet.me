@@ -1,0 +1,33 @@
+/* <h2 class="site-logo">
+<a href="/">JAMALBELILET</a>
+</h2> */
+
+
+.site-logo a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.site-logo a span {
+    color: #FFAA00;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .site-logo a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .site-logo a {
+        font-size: .8em;
+    }
+}

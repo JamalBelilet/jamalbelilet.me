@@ -1,0 +1,31 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ $pag := .Paginator }}
+ 
+{{ if gt $pag.TotalPages 1 }}
+ 
+<nav class="center pagination">
+    {{ range $pag.Pagers }}{{ if eq . $pag }}<span class="pagination__button button--disabled">{{ .PageNumber }}</span>{{ else }}<a class="pagination__button" href='{{ $baseurl }}{{ .URL }}'>{{ .PageNumber }}</a>{{ end }}{{ end }}
+ 
+    <div class="clearfix">
+        {{ if .Paginator.HasPrev }}
+        <a class="pagination__button pagination__button--previous" title="Previous Page" href="{{ .Paginator.Prev.URL }}">
+            Newer Articles
+        </a>
+        {{ else }}
+        <span class="pagination__button pagination__button--previous button--disabled">Newer Articles</span>
+        {{ end }}
+ 
+        {{ if .Paginator.HasNext }}
+        <a class="pagination__button pagination__button--next" title="Next Page" href="{{ .Paginator.Next.URL }}">
+            Older Articles
+        </a>
+        {{ else }}
+        <span class="pagination__button pagination__button--next button--disabled">Older Articles</span>
+        {{ end }}
+    </div>
+ 
+    <a href="../article-archives/" class="button button--full">See a list of all articles</a>
+ 
+</nav>
+ 
+{{ end }}

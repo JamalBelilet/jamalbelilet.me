@@ -1,0 +1,31 @@
+{{ partial "header.html" . }} {{ .Content }}
+
+
+<ul class="articles-list">
+    <!-- Ranges through content/blog/*.md -->
+    {{ range where (.Paginator 5).Pages "Type" "blog" }}
+    <li class="post">
+        <a href="#" class="image featured">{{if isset .Params "featured_image" }}
+            <img src="{{ .Params.featured_image }}"> {{ end }}</a>
+
+        <span class="post-meta">
+            <time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} —
+            <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
+
+
+        <a class="post-title" href="{{.RelPermalink}}">{{ .Title }}</a>
+
+        <div class="post-summary">
+            {{ .Summary }}
+            <!-- automatically takes the first paragraph in the .md article -->
+        </div>
+    </li>
+
+    {{ end }}
+</ul>
+
+<!-- {{ partial "pagination.html" . }} -->
+
+
+
+{{ partial "footer.html" . }}

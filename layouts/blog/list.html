@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+<ul class="articles-list">
+    <!-- Ranges through content/blog/*.md -->
+    {{ range (.Paginator 5).Pages }}  
+    <li class="post">
+        <a class="post-title" href="{{.RelPermalink}}">{{ .Title }}</a>
+        <span class="post-meta"><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} — <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
+                         
+        <div class="post-summary">
+            {{ .Summary }} <!-- automatically takes the first paragraph in the .md article -->
+        </div>
+ 
+        <p><small><a href="{{.RelPermalink}}" class="read-more-link">Read more ››</a></small></p>
+    </li>
+ 
+    {{ end }}
+</ul>
+ 
+{{ partial "pagination.html" . }}
+
+{{ partial "footer.html" . }}

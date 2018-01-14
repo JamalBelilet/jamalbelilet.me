@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<div class="post">
+    <span class="post-meta">
+        <time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} —
+        <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
+
+
+    <h2 class="post-title">{{ .Title }}</h2>
+
+    <a href="#" class="image featured">{{if isset .Params "featured_image" }}
+        <img src="{{ .Params.featured_image }}"> {{ end }}</a>
+
+
+    <div class="post-summary">
+        {{ .Summary }}
+        <!-- automatically takes the first paragraph in the .md article -->
+    </div>
+
+    {{ .Content }}
+</div>
+{{ partial "footer.html" . }}

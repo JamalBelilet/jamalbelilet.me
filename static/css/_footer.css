@@ -1,0 +1,26 @@
+.social ul {
+    padding: 0;
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    align-items: center;
+
+    list-style: none;
+}
+
+.social ul li a {
+    margin: .5em;
+}
+
+.social ul li a img {
+    width: 1.2em;
+}
+
+.copyright {
+    font-size: 75%;
+    font-weight: 400;
+    padding: 0 2em 0 2em;
+    text-align: center;
+    color: #2E2E2E;
+}

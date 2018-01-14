@@ -1,0 +1,165 @@
+{{ partial "header.html" . }}
+
+<div class='static {{if eq .URL "/contact/"}} static-contact {{end}}'>
+    <img class="jamalbelilet-img" src="/img/jamalbelilet.jpg" alt="jamalbelilet image">
+    <img class="jamalbelilet-img small" src="/img/jamalbelilet-small.jpg" alt="jamalbelilet image-small">
+    <div class="static-content">
+
+        {{ .Content }} {{if eq .URL "/contact/"}}
+        <form action="post" class="contact-form">
+            <input placeholder="text" type="text" name="name" id="name">
+            <input placeholder="email" type="email" name="email" id="email">
+            <input placeholder="phone" type="text" name="phone" id="phone">
+            <input placeholder="subject" type="text" name="subject" id="subject">
+            <textarea placeholder="message" name="message" id="message" cols="30" rows="5"></textarea>
+            <button type="submit">send message
+                <span>&gt;</span>
+            </button>
+        </form>
+        {{end}}
+
+    </div>
+
+    {{if eq .URL "/about/"}}
+    <div class="skills">
+        <div class="skill">
+            <img src="/icon/apis-design.svg" alt="apis-design">
+
+            <h3>APIs
+                <br>DESIGN</h3>
+            <p>I design APIs based on Nodejs, Firebase, or Firebase, and with the new wordpress API solution I create powerful
+                endpoints that fits to needs over a meaningful hierarchy</p>
+            <ul>
+                <li>
+                    <img src="/icon/nodejs.png" alt="nodejs">
+                </li>
+                <li>
+                    <img src="/icon/java.png" alt="java">
+                </li>
+                <li>
+                    <img src="/icon/mongodb.png" alt="mongodb">
+                </li>
+                <li>
+                    <img src="/icon/firebase.png" alt="firebase">
+                </li>
+                <li>
+                    <img src="/icon/wordpress.png" alt="wordpress">
+                </li>
+                <li>
+                    <img src="/icon/php.png" alt="php">
+                </li>
+            </ul>
+        </div>
+        <div class="skill">
+            <img src="/icon/mobile-development.svg" alt="mobile-development">
+
+            <h3>Mobile
+                <br>Development</h3>
+            <p>I mainly work with web technologies such as React (React-Native), Angular (Ionic). Well versed in user interface
+                styling using CSS related technologies. </p>
+            <ul>
+                <li>
+                    <img src="/icon/ionic.png" alt="ionic">
+                </li>
+                <li>
+                    <img src="/icon/android.png" alt="android">
+                </li>
+                <li>
+                    <img src="/icon/angular.svg" alt="angular">
+                </li>
+                <li>
+                    <img src="/icon/firebase.png" alt="firebase">
+                </li>
+            </ul>
+        </div>
+        <div class="skill">
+            <img src="/icon/software-development.svg" alt="software-development">
+
+            <h3>software
+                <br>development</h3>
+            <p>I am an advanced software developer with experience in various problem areas. I can work alone or with your team
+                in agile development environment on any product development stages</p>
+            <ul>
+                <li>
+                    <img src="/icon/nodejs.png" alt="nodejs">
+                </li>
+                <li>
+                    <img src="/icon/java.png" alt="java">
+                </li>
+                <li>
+                    <img src="/icon/electron.png" alt="electron">
+                </li>
+            </ul>
+        </div>
+        <div class="skill">
+            <img src="/icon/web-development.svg" alt="web-development">
+
+            <h3>WEB
+                <br>DEVELOPMENT</h3>
+            <p>I am mainly a Mean stacker, I code Javascript base solutions with love, I offer quality web development services
+                for small businesses and large multinational companies.
+            </p>
+            <ul>
+                <li>
+                    <img src="/icon/html.png" alt="nodejs">
+                </li>
+                <li>
+                    <img src="/icon/css.png" alt="java">
+                </li>
+                <li>
+                    <img src="/icon/bootstrap.svg" alt="bootstrap">
+                </li>
+                <li>
+                    <img src="/icon/sass.svg" alt="sass">
+                </li>
+                <li>
+                    <img src="/icon/javascript.png" alt="javascript">
+                </li>
+                <li>
+                    <img src="/icon/typescript.png" alt="typescipt">
+                </li>
+                <li>
+                    <img src="/icon/angular.svg" alt="angular">
+                </li>
+                <li>
+                    <img src="/icon/firebase.png" alt="firebase">
+                </li>
+                <li>
+                    <img src="/icon/php.png" alt="php">
+                </li>
+                <li>
+                    <img src="/icon/wordpress.png" alt="wordpress">
+                </li>
+                <li>
+                    <img src="/icon/hugo.png" alt="hubo">
+                </li>
+            </ul>
+        </div>
+        <div class="skill">
+            <img src="/icon/project-management.svg" alt="project-management">
+
+            <h3>PROJECT
+                <br>MANAGEMENT</h3>
+            <p>I Automate painful or time-consuming tasks in development workflow, so you can stop messing around and build
+                something awesome</p>
+            <ul>
+                <li>
+                    <img src="/icon/gulp.png" alt="gulp">
+                </li>
+                <li>
+                    <img src="/icon/webpack.svg" alt="webpack">
+                </li>
+                <li>
+                    <img src="/icon/git.png" alt="git">
+                </li>
+                <li>
+                    <img src="/icon/github.svg" alt="github">
+                </li>
+            </ul>
+        </div>
+    </div>
+    {{end}}
+
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,55 @@
+/* <header class="header">
+<h1 class="site-title">BETTER BY JAMALBELILET</h1>
+</header> */
+
+.header .site-title {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+.header .site-title span {
+  color: #ffaa00;
+}
+
+.header .menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header .site-title {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .header .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+      }
+    
+      .header .menu-toggle img {
+        display: block;
+        width: 1.8em;
+      }
+}
+
+@media screen and (max-width: 480px) {
+  .header .site-title {
+    font-size: 1em;
+  }
+
+  .header .menu-toggle img {
+    display: block;
+    width: 1.4em;
+  }
+
+}
