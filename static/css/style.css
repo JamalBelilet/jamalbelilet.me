@@ -129,9 +129,8 @@ input:focus, textarea:focus, button:focus {
         z-index: 1;
         box-shadow: 0 0 6px black;
     }
-
     .main-aside#side-menu.active {
-        animation: toggle-menu .5s ease-out forwards;
+        animation: toggle-menu .2s ease-out forwards;
     }
 
     
