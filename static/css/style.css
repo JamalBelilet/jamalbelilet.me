@@ -132,6 +132,9 @@ input:focus, textarea:focus, button:focus {
     .main-aside#side-menu.active {
         animation: toggle-menu .2s ease-out forwards;
     }
+    /* .main-aside#side-menu.inactive {
+        animation: toggle-menu 1.2s ease-out reverse;
+    } */
 
     
     

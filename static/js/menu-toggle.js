@@ -5,5 +5,6 @@ document.onreadystatechange = event => {
     console.log(document);
     menuToggle.onclick = event => {
         sideMenu.classList.toggle('active')
+        sideMenu.classList.toggle('inactive')
     };
 }
