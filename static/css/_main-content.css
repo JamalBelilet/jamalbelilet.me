@@ -20,6 +20,9 @@
 .main-content .articles-list .post .image.featured img {
     width: 100%;
     margin-bottom: 1em;
+    border-radius: 3px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .1) 
+    
 }
 
 .main-content .articles-list .post .post-meta {
