@@ -74,7 +74,7 @@
   color: #8f8f8f;
   text-transform: capitalize;
   font-weight: 300;
-  font-family: Roboto;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 .static .contact-form textarea {
@@ -90,7 +90,7 @@
   font-weight: 300;
   background: transparent;
   padding: 0;
-  font-family: Roboto;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 .static .contact-form button span {
