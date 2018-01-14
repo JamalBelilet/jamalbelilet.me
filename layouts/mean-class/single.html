@@ -11,11 +11,10 @@
         <img src="{{ .Params.featured_image }}"> {{ end }}</a>
 
 
-    <div class="post-summary">
-        {{ .Summary }}
-        <!-- automatically takes the first paragraph in the .md article -->
+    <div class="post-content">
+        {{ .Content }}
     </div>
 
-    {{ .Content }}
+
 </div>
 {{ partial "footer.html" . }}
