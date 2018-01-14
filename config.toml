@@ -1,4 +1,3 @@
-baseURL = "http://example.org/"
+baseURL = "http://jflag.design/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-Paginate = 1
+title = "jamalbelilet"
