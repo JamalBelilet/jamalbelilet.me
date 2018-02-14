@@ -108,6 +108,7 @@ input:focus, textarea:focus, button:focus {
 
 @media screen and (max-width: 650px) {
     
+    
     .site {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         height: 100vh;
@@ -117,6 +118,12 @@ input:focus, textarea:focus, button:focus {
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: .6fr 4.7fr 1fr ;
+
+       
+    }
+
+    .site  #full-bleed {
+        width: 100% !important;
     }
 
     .header {
