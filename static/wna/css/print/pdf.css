@@ -23,6 +23,10 @@ html {
 	overflow: visible;
 }
 
+* {
+	color: black!important;
+}
+
 /* Remove any elements not needed in print. */
 .nestedarrow,
 .reveal .controls,
