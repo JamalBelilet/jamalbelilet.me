@@ -502,6 +502,13 @@ input {
     z-index: 1;
 }
 
+.reveal .lets-play.ivy span {
+    color: black!important;
+    padding: 1em;
+    font-size: 1em;
+    z-index: 1;
+}
+
 
 
 
@@ -527,6 +534,34 @@ input {
   margin: -.5vw .5vw;
 }
 
+.reveal .console h2.future img {
+  display: inline-block;
+  width: auto;
+  height: 8vh;
+  border: none!important;
+  background: transparent!important;
+  box-shadow: none !important;  
+  margin: -.5vh .5vw;
+}
+
+.hljs.javascript {
+  height: auto!important;
+}
+
+.grid {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  flex-flow: row wrap!important;
+  width: 80vw!important;
+  margin-left: -10vw!important;
+}
+.grid li {
+  margin-right: 5vw!important;
+  width: 35vw;
+  /* width: 5vw; */
+
+}
 /* .full-screen{
   position: absolute;
   top: -5vh;
