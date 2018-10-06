@@ -19,7 +19,7 @@ body {
 }
 
 .reveal {
-    background-image: url("../../images/whoami.svg");
+    /* background-image: url("../../images/whoami.svg"); */
 
     background-repeat: no-repeat;
     background-size: cover;
