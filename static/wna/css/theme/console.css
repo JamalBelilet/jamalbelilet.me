@@ -9,12 +9,13 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-    background-color: #111;
+    background-color: #212121;
     background-image: url("../../images/black_back.PNG");
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
 }
 
 .reveal {
