@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Let's develop in GDG Algiers</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/jCarousel.css">
+	<link rel="stylesheet" href="css/theme/console.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/androidstudio.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>Code editing.
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">Redefined.
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">By
+						<img class="angular" src="images/code.svg">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<footer class="footer">
+					<p>Djamaleddine Belilet</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@JamalBelilet</a>
+					</p>
+				</footer>
+			</section>
+
+			<section>
+				<!-- ------------ slide 2------------ -->
+				<div class="console">
+					<h2>Table of content</h2>
+					<ul>
+						<li>Setting VSCode</li>
+						<li>Code Navigation</li>
+						<li>Emmet</li>
+						<li>IntelliSense</li>
+						<li>Snippets</li>
+						<li>Git/Github, Debugging
+							<img src="images/code-fork-symbol.png">
+						</li>
+
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Setting VSCode</h2>
+						<p>install, settings, theming, extensions, themes</p>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>Code Navigation</h2>
+						<p>Shortcuts, and Layout</p>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>Emmet</h2>
+						<p>Examples (html, css), multi-lines editing</p>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>IntelliSense</h2>
+						<ul>
+							<li>web</li>
+							<li>python</li>
+							<li>dart</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>Snippets</h2>
+						<p>from Marketplace, creating snippets</p>
+					</div>
+				</section>
+			</section>
+
+			
+
+			<section>
+				<div class="console">
+					<h2 class="future">Git/Github integration</h2>
+					<ul>
+						<li>Git support</li>
+						<li>Clone, Commit, Push</li>
+						<li>Status, Indicators</li>
+						<li>Viewing diffs</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>Code editing.
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>Redefined.
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>By
+						<img class="angular" src="images/code.svg">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<footer class="footer">
+					<p>Djamaleddine</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@JamalBelilet</a>
+					</p>
+				</footer>
+			</section>
+
+		</div>
+		<!--slides-->
+	</div>
+	<!--revieal-->
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/jCarousel.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transitionSpeed: 'default', // default/fast/slow
+			slideNumber: true,
+			controls: false,
+			rollingLinks: true,
+			progress: true,
+			fragments: true,
+			showNotes: false,
+			mouseWheel: true,
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
+

@@ -1,0 +1,57 @@
+div[jCarousel] {
+    display: none;
+    width: 95vw;
+    height: 300px;
+    background-color: rgba(18, 34, 43, .5);
+    position: relative;
+    perspective: 10000px;
+    font-size: .3em;
+    margin-left: -14.5VW;
+    border: .1em solid whitesmoke;
+}
+div[jCarousel] .textDiv{
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 35%;
+    animation: rightPlusRotate95882466158 2s alternate 2 both;
+}
+div[jCarousel] .textDiv p{
+    position: absolute;
+    top: 80px;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+}
+div[jCarousel] .textDiv h2{
+    position: absolute;
+    top: 50px;
+    color: #fff;
+}
+div[jCarousel] .imgDiv{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 45%;
+    height: 400px;
+    animation: leftPlusRotate12395482215 2s alternate 2 both;
+}
+div[jCarousel] .imgDiv img{
+    margin: 0 auto;
+    height: 425px;
+    border: none;
+}
+
+@keyframes leftPlusRotate12395482215 {
+    0% { transform: translateX(0) rotateY(90deg) scale(.8);}
+    30% { transform: translateX(0) rotateY(0deg) scale(.9); }
+    100% { transform: translateX(-55%) rotateY(0deg) scale(1);
+        animation-timing-function: ease-out;}
+}
+
+@keyframes rightPlusRotate95882466158 {
+    0% { transform: translateX(0) rotateY(90deg) scale(.8);}
+    30% { transform: translateX(0) rotateY(0deg) scale(.9); }
+    100% { transform: translateX(55%) rotateY(0deg) scale(1);
+        animation-timing-function: ease-out;}
+}
