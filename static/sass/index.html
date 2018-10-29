@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Let's develop in GDG Algiers</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/jCarousel.css">
+	<link rel="stylesheet" href="css/theme/console.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/androidstudio.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>Empower
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">and beautify css
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">With
+						<img class="angular" src="images/Sass_Logo_Color.png">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+			</section>
+
+			<section>
+				<section>
+					<!-- ------------ slide 2------------ -->
+					<div class="console">
+						<h2>SYNTACTICALLY AWESOME STYLESHEETS</h2>
+						<ul>
+							<li>CSS Extension</li>
+							<li>Pre-processed
+								<!-- <img src="images/programming.png"> -->
+							</li>
+							<li>Extensible
+								<!-- <img src="images/podium.png"> -->
+							</li>
+							<li>Written in Ruby
+								<!-- <img src="images/classroom.png"> -->
+							</li>
+							<!-- <li>and Contribute
+								<img src="images/code-fork-symbol.png">
+							</li> -->
+
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Features: Variables</h2>
+					<pre><code>
+	$main_color: #9E2932;
+
+	.navbar {
+		background: $main_color;
+	}
+
+	h1, h2, h3 {
+		background: darken(@main_color, 20);
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Nesting</h2>
+					<pre><code>
+	.pixgrid {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				float: left;
+				width: 96px;
+				height: 96px;
+				padding: 0 5px 5px 0;
+			}
+		}
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Partials</h2>
+					<pre><code>
+	//Core Partials
+	@import "variables";
+	@import "mixins";
+	@import "base";
+	@import "layout";
+
+	//Import Modules
+	@import "modules/intro";
+	@import "modules/nav";
+	@import "modules/welcome";
+	@import "modules/events";
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Extend</h2>
+					<pre><code>
+	.btn {
+		padding: 6px 12px;
+		line-height: 140%;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: #C61C6F;
+		color: #FCF4DC;
+	}
+	.btn-reverse {
+		@extend .btn;
+		background: #FCF4DC;
+		color: #C61C6F;
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Operators</h2>
+					<pre><code>
+	$border_thickness: 1px;
+	$thicker: $border_thickness * 5;
+
+	.sidebar {
+		@if ($border_thickness <= 1) {
+			background-color: red;
+		} @else {
+			background-color: yellow;
+		}
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Mixins</h2>
+					<pre><code>
+	@mixin rounded( $radius: 10px) {
+		-webkit-border-radius: $radius;
+		border-radius: $radius;
+		background-clip: padding-box;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li img {
+			display: block;
+			@include rounded(20px);	
+		}
+	}
+
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<!-- ------------ slide 3 What is Angular------------ -->
+				<div class="console">
+					<h2>PREPARE THE ENV</h2>
+					<p>We'll need to install</p>
+					<ul>
+						<li class="lets-play">
+							<span>Ruby & Git</span>
+						</li>
+						<li class="lets-play">
+							<span>Webpack & Sass loaders</span>
+						</li>
+						<li class="lets-play">
+							<span>Add watchers</span>
+						</li>
+						<li class="lets-play">
+							<span>Lunch httpster or live server</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2 class="future">Learning Sass fundamentals</h2>
+						<!-- <h2 class="lets-play ivy">
+							<span> GDG School</span>
+						</h2> -->
+						<ul>
+							<li>Variables</li>
+							<li>Nesting</li>
+							<li>Partials</li>
+							<li>Mixins</li>
+							<li>Inheritance: @extend method</li>
+							<li>Operators</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Features: Variables</h2>
+					<pre><code>
+	$main_color: #9E2932;
+
+	.navbar {
+		background: $main_color;
+	}
+
+	h1, h2, h3 {
+		background: darken(@main_color, 20);
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Nesting</h2>
+					<pre><code>
+	.pixgrid {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				float: left;
+				width: 96px;
+				height: 96px;
+				padding: 0 5px 5px 0;
+			}
+		}
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Partials</h2>
+					<pre><code>
+	//Core Partials
+	@import "variables";
+	@import "mixins";
+	@import "base";
+	@import "layout";
+
+	//Import Modules
+	@import "modules/intro";
+	@import "modules/nav";
+	@import "modules/welcome";
+	@import "modules/events";
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Extend</h2>
+					<pre><code>
+	.btn {
+		padding: 6px 12px;
+		line-height: 140%;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: #C61C6F;
+		color: #FCF4DC;
+	}
+	.btn-reverse {
+		@extend .btn;
+		background: #FCF4DC;
+		color: #C61C6F;
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Operators</h2>
+					<pre><code>
+	$border_thickness: 1px;
+	$thicker: $border_thickness * 5;
+
+	.sidebar {
+		@if ($border_thickness <= 1) {
+			background-color: red;
+		} @else {
+			background-color: yellow;
+		}
+	}
+
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: Mixins</h2>
+					<pre><code>
+	@mixin rounded( $radius: 10px) {
+		-webkit-border-radius: $radius;
+		border-radius: $radius;
+		background-clip: padding-box;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li img {
+			display: block;
+			@include rounded(20px);	
+		}
+	}
+
+					</code></pre>
+				</section>
+			</section>
+
+
+			<section>
+				<h2>Coding the first mock-up</h2>
+				<img src="./images/ui-1.jpg">
+			</section>
+			<section>
+				<h2>working with SassScript</h2>
+				<ul>
+					<li>Math operations</li>
+					<li>Modifiers</li>
+					<li>working with list elements</li>
+					<li>Using the @content container</li>
+					<li>Conditional @if statements</li>
+					<li>Loops using @for and @each</li>
+					<li>Going through lists with</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Coding the second mock-up</h2>
+				<img src="./images/ui-2.jpg">
+			</section>
+			<section>
+				<h2>Plugins: Compass and Susy</h2>
+			</section>
+			<section>
+				<h2>2K18 Challenge</h2>
+			</section>
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>It is 2018
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>LET'S DEVELOP
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>AT
+						<img class="angular" src="images/Sass_Logo_Color.png">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+			</section>
+
+		</div>
+		<!--slides-->
+	</div>
+	<!--revieal-->
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/jCarousel.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transitionSpeed: 'default', // default/fast/slow
+			slideNumber: true,
+			controls: false,
+			rollingLinks: true,
+			progress: true,
+			fragments: true,
+			showNotes: false,
+			mouseWheel: true,
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>

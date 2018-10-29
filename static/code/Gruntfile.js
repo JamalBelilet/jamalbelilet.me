@@ -18,7 +18,6 @@ module.exports = function(grunt) {
 				' * Copyright (C) 2017 Hakim El Hattab, http://hakim.se\n' +
 				' */'
 		},
-
 		qunit: {
 			files: [ 'test/*.html' ]
 		},

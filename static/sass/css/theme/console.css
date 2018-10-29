@@ -10,7 +10,7 @@
  *********************************************/
 body {
     background-color: #212121;
-    background-image: url("../../images/black_back.PNG");
+    background-image: url("../../images/background-1121216_1920.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,6 +29,7 @@ body {
     font-weight: normal;
     color: #eee;
     text-align: left;
+    background: rgba(0, 0, 0, 0.55);
 }
 
 ::selection {
@@ -62,7 +63,7 @@ body {
   line-height: .8;
   text-transform: none;
   text-shadow: none;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
   text-align: left;
 
 }
@@ -183,7 +184,10 @@ body {
   padding: 5px;
   overflow: auto;
   max-height: 400px;
-  word-wrap: normal; }
+  word-wrap: normal; 
+  background: rgba(255, 255, 255, 1);
+  color: rgb(84, 13, 215);
+}
 
 .reveal table {
   margin: auto;
@@ -252,7 +256,9 @@ body {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+  max-height: 65vh;
+}
 
 .reveal section img.plain {
   border: 0;
@@ -340,7 +346,7 @@ body {
 .reveal .console .cursor.ng {
   display: block;
   position: absolute;
-  bottom: -5vh!important;
+  bottom: -.5vh!important;
   margin: 0!important
 }
 .reveal .console .cursor.hide-cursor {
@@ -494,7 +500,7 @@ input {
     
     padding: .1em .5em;
     /* width: 5.5em; */
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .reveal .lets-play span {
@@ -517,9 +523,9 @@ input {
     background: transparent!important;
     box-shadow: none !important;
     width: auto;
-    height: 10vw;
+    height: 20vw;
     border: none !important;
-    margin-bottom: -5vw!important;
+    margin-bottom: -15vw!important;
 }
 /* .reveal .console li {
   display: flex;
