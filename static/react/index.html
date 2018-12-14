@@ -1,0 +1,716 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Jamalbelilet - Build modern web applications with React</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/jCarousel.css">
+	<link rel="stylesheet" href="css/theme/console.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/androidstudio.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<link rel="stylesheet" href="./css/highlight/vs.css">
+	<script src="./js/highlight.pack.js"></script>
+	<!-- <script src="./js/highlight-js.js" type="text/javascript"></script>
+	<script>
+		hljs.registerLanguage('js', H_js);
+		hljs.initHighlightingOnLoad();
+	</script> -->
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>Build
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">modern web applications
+						<span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+					</h2>
+					<h2 class="fragment" data-fragment-index="1">with
+						<img class="angular" src="images/react.png">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Learning React</h2>
+						<ul>
+							<li>Introduction</li>
+							<li>Tooling</li>
+							<li>Editor setup</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>What's React</h2>
+						<p>A JavaScript library for building user interfaces.</p>
+						<ul>
+							<li>Declarative</li>
+							<li>Component-Based</li>
+							<li>Learn Once, Write Anywhere</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="console">
+						<h2>Virtual DOM</h2>
+						<p>reconciliation and DOM diffing.</p>
+						<div class="canvas">
+							<div class="box">DOM</div>
+							<div class="arrows fragment" data-fragment-index="1">
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down reversed"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+							</div>
+							<div class="box fragment" data-fragment-index="1">React DOM</div>
+							<div class="arrows">
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down reversed"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down reversed"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down reversed"><a href="#complements" class="animate">More</a></p>
+								<p class="scroll-down"><a href="#complements" class="animate">More</a></p>
+							</div>
+							<div class="box">JavaScript Logic</div>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Javascript <br><small>basic</small> es6</h2>
+						<ul>
+							<li>let and const</li>
+							<li>The spread operator</li>
+							<li>Template literals</li>
+							<li>Default function parameters</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>let and const</h2>
+					<pre><code>
+let name = 'Edmond';
+name = 'Atto';
+console.log(name);
+
+//output
+Atto
+					</code></pre>
+				</section>
+				<section>
+					<h2>The spread operator</h2>
+					<pre><code>
+const cities = ["Kampala", "Nairobi", "Lagos"];
+console.log(...cities);
+
+//output
+Kampala Nairobi Lagos
+					</code></pre>
+				</section>
+				<section>
+					<h2>Template literals</h2>
+					<pre><code>
+const student = {
+  name: 'John Kagga',
+  city: 'Kampala'
+};
+
+let message = 'Hello ' + student.name + ' from ' + student.city;
+console.log(message);
+//output: Hello John Kagga from Kampala
+
+// ---------------- vs ------------------
+
+let message = `Hello ${student.name} from ${student.city}`;
+console.log(message);
+//output: Hello John Kagga from Kampala
+					</code></pre>
+				</section>
+				<section>
+					<h2>Default function parameters</h2>
+					<pre><code>
+function greet(name = 'Fellow', greeting = 'Welcome') {
+  return `${greeting} ${name}`;
+}
+
+console.log(greet()); // Welcome Fellow
+console.log(greet('Kagga')); // Welcome Kagga
+console.log(greet('Mike', 'Hi')); // Hi Mike
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Javascript <br><small>advanced</small> es6</h2>
+						<ul>
+							<li>Destructuring</li>
+							<li>Object literal Shorthand</li>
+							<li>Arrow functions</li>
+							<li>Classes</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Destructuring</h2>
+					<pre><code>
+const points = [20, 30, 40];
+const x = points[0];
+const y = points[1];
+const z = points[2];
+
+console.log(x, y, z); //output: 20 30 40
+
+// ---------------- vs ------------------
+
+const points = [20, 30, 40];
+const [x, y, z] = points;
+
+console.log(x, y, z); //output: 20 30 40
+						</code></pre>
+				</section>
+				<section>
+					<h2>Object literal Shorthand</h2>
+					<pre><code>
+let type = 'Toyota';
+let color = 'Silver';
+let model = 2007;
+
+const car = {
+  type: type,
+  color: color,
+  model: model
+};
+
+// ---------------- vs ------------------
+
+const car = {type, color, model};
+						</code></pre>
+				</section>
+				<section>
+					<h2>Arrow functions</h2>
+					<pre><code>
+function (name) { 
+  return name.toUpperCase();
+}
+
+// ---------------- vs ------------------
+
+name => name.toUpperCase();
+						</code></pre>
+				</section>
+				<section>
+					<h2>Classes</h2>
+					<pre><code>
+class Animal {
+  constructor(numLegs) {
+    this.numLegs = numLegs;
+    this.mammal = false;
+  }
+
+  isMammal() {
+    this.mammal = true;
+  }
+}
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Components <br>101</h2>
+						<ul>
+							<li>Thinking and understanding react components</li>
+							<li>Creating our first components</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Features: Components</h2>
+					<pre><code>
+import React, { Component } from 'react';
+class App extends Component {
+  render() {
+    return (
+      <header>
+        <h1>GDG for once, GDG Forever</h1>
+      </header>
+    );
+  }
+};
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>It's about layout</h2>
+						<ul>
+							<li>Writing HTML with JSX</li>
+							<li>Loading CSS into our react application</li>
+							<li>Creating application layout with components</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Features: <code>JSX</code></h2>
+					<pre><code>
+// JSX
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+
+// none JSX
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+						</code></pre>
+				</section>
+				<section>
+					<h2>Features: <code>Loading CSS</code></h2>
+					<pre><code>
+// start of mycomponent.css
+.left { background-color: pink; flex: 1 }
+.right { background-color: black; color: white; flex: 1 } 
+// end of file
+
+
+// start of mycomponent.js
+import './mycomponent.css'
+...
+  <h2 className="heading-2">What's JSX?</h2>
+...
+// end of file
+						</code></pre>
+				</section>
+				<section>
+					<h2>Features: <code>Component oriented layout</code></h2>
+					<pre><code>
+<main>
+
+  <Header title="GDG School"></Header>
+
+  <Editor>
+    <Tooling></Tooling>
+    <Canvas></Canvas>
+  </Editor> 
+
+  <Footer expended={true}></Footer>
+
+</main>
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Advanced components</h2>
+						<ul>
+							<li>Passing dynamic data with props</li>
+							<li>Stateless functional components</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Advanced: <code>props</code></h2>
+					<pre><code>
+// start of App.js
+...
+<div>
+  <Greeting greeting={greeting}></Greeting>
+</div>
+...
+// end of file
+
+// start of Greeting.js
+class Greeting extends Component {
+  render() {
+    return <h1>{this.props.greeting}</h1>;
+  }
+}
+// end of file
+						</code></pre>
+				</section>
+				<section>
+					<h2>Advanced: <code>Stateless Function Component</code></h2>
+					<pre><code>
+class ClassComponent extends Component {
+  render() {
+    return <div>{this.props.name}</div>;
+  }
+}
+
+// vs
+
+const StatelessComponent = props => <div>{props.name}</div>;
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Routing</h2>
+						<ul>
+							<li>Routing with react router</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Advanced: <code>react-router</code></h2>
+					<pre><code>
+const routes = {
+  path: '/',
+  component: App,
+  indexRoute: { component: Home },
+  childRoutes: [
+    { path: 'about', component: About },
+    { path: 'inbox', component: Inbox },
+  ]
+}
+
+render(
+  <Router history={history} routes={routes}></Router>, 
+  document.body
+)
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>Events</h2>
+						<ul>
+							<li>Events, Refs and this binding</li>
+							<li>Handling events</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Advanced: <code>events</code></h2>
+					<pre><code>
+class LoggingButton extends React.Component {
+  handleClick() {
+  console.log('this is:', this);
+  }
+
+  render() {
+  // This syntax ensures `this` is bound within handleClick
+  return (
+    <button onClick={(e) => this.handleClick(e)}>
+    Click me
+    </button>
+  );
+  }
+}
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<div class="console">
+						<h2>React essentials part 1</h2>
+						<p>We've learned</p>
+						<ul>
+							<li class="lets-play">
+								<span>Components 101</span>
+							</li>
+							<li class="lets-play">
+								<span>It's about layout</span>
+							</li>
+							<li class="lets-play">
+								<span>Advanced components</span>
+							</li>
+							<li class="lets-play">
+								<span>Routing and Events</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Features: <code>components</code></h2>
+					<pre><code>
+import React, { Component } from 'react';
+class App extends Component {
+  render() {
+    return (
+      <header>
+        <h1>GDG for once, GDG Forever</h1>
+      </header>
+    );
+  }
+};
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: <code>JSX</code></h2>
+					<pre><code>
+// JSX
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+
+// none JSX
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: <code>Loading CSS</code></h2>
+					<pre><code>
+// start of mycomponent.css
+.left { background-color: pink; flex: 1 }
+.right { background-color: black; color: white; flex: 1 } 
+// end of file
+
+
+// start of mycomponent.js
+import './mycomponent.css'
+...
+  <h2 className="heading-2">What's JSX?</h2>
+...
+// end of file
+					</code></pre>
+				</section>
+				<section>
+					<h2>Features: <code>Component oriented layout</code></h2>
+					<pre><code>
+<main>
+
+  <Header title="GDG School"></Header>
+
+  <Editor>
+	  <Tooling></Tooling>
+	  <Canvas></Canvas>
+  </Editor>
+
+  <Footer expended={true}></Footer>
+
+</main>
+					</code></pre>
+				</section>
+				<section>
+					<h2>Advanced: <code>props</code></h2>
+					<pre><code>
+// start of App.js
+...
+<div>
+  <Greeting greeting={greeting}></Greeting>
+</div>
+...
+// end of file
+
+// start of Greeting.js
+class Greeting extends Component {
+  render() {
+    return <h1>{this.props.greeting}</h1>;
+  }
+}
+// end of file
+					</code></pre>
+				</section>
+				<section>
+					<h2>Advanced: <code>Stateless Function Component</code></h2>
+					<pre><code>
+class ClassComponent extends Component {
+  render() {
+    return <div>{this.props.name}</div>;
+  }
+}
+
+// vs
+
+const StatelessComponent = props => <div>{props.name}</div>;
+					</code></pre>
+				</section>
+				<section>
+					<h2>Advanced: <code>react-router</code></h2>
+					<pre><code>
+const routes = {
+  path: '/',
+  component: App,
+  indexRoute: { component: Home },
+  childRoutes: [
+    { path: 'about', component: About },
+    { path: 'inbox', component: Inbox },
+  ]
+}
+
+render(
+  <Router history={history} routes={routes}></Router>, 
+  document.body
+)
+					</code></pre>
+				</section>
+				<section>
+					<h2>Advanced: <code>events</code></h2>
+					<pre><code>
+class LoggingButton extends React.Component {
+  handleClick() {
+    console.log('this is:', this);
+  }
+
+  render() {
+    // This syntax ensures `this` is bound within handleClick
+    return (
+      <button onClick={(e) => this.handleClick(e)}>
+        Click me
+      </button>
+    );
+  }
+}
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<h2>what's next?</h2>
+			</section>
+
+			<!-- <section>
+				<h2>Coding the first mock-up</h2>
+				<img src="./images/ui-1.jpg">
+			</section> -->
+			<section>
+				<h2>Working with States</h2>
+				<br>
+				<ul>
+					<li>Understanding State</li>
+					<li>Loading data into states</li>
+					<li>Displaying states with JSX</li>
+					<li>Updating states</li>
+					<li>Persisting states with localStorage</li>
+					<li>Bi-directional data flow and live state editing</li>
+				</ul>
+			</section>
+			<!-- <section>
+				<h2>Coding the second mock-up</h2>
+				<img src="./images/ui-2.jpg">
+			</section> -->
+			<section>
+				<h2>2K18 Challenge</h2>
+			</section>
+			<section>
+				<!-- ------------ slide 1------------ -->
+				<div class="console large">
+					<p>c:\gdg\algiers&gt;</p>
+					<h2>Build
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>modern web applications
+						<span class="cursor hide-cursor fade-out">-</span>
+					</h2>
+					<h2>with
+						<img class="angular" src="images/react.png">
+						<div class="ng-container">
+							<span class="cursor ng">-</span>
+						</div>
+					</h2>
+				</div>
+				<!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+			</section>
+
+		</div>
+		<!--slides-->
+	</div>
+	<!--revieal-->
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/jCarousel.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transitionSpeed: 'default', // default/fast/slow
+			slideNumber: true,
+			controls: false,
+			rollingLinks: true,
+			progress: true,
+			fragments: true,
+			showNotes: false,
+			mouseWheel: true,
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
