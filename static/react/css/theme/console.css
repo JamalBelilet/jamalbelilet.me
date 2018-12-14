@@ -513,6 +513,7 @@ input {
     box-shadow: none !important;
     width: auto;
     height: 20vw;
+    min-height: 250px;
     object-fit: contain;
     border: none !important;
     margin-bottom: -13vw!important;
@@ -676,34 +677,20 @@ iframe {
 .reveal .canvas {
   background-color: rgba(0, 0, 0, 0.15);
   padding: 1em;
-  width: 75vw;
+  width: 170%;
   min-height: 20vh;
   border: .1em solid white;
-  margin-left: -22vw;
   margin-top: 50px;
+  /* margin-left: 0; */
+  right: 35%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
   border-radius: 2px;
+  box-sizing: border-box;
 }
-/* 
-.reveal .canvas::before {
-  display: block;
-  position: absolute;
-  top: -1.3em;
-  left: -.15em;
-  width: auto;
-  padding: 0 .2em;
-  font-size: 30px;
-  height: 1.3em;
-  content: "none-vdom";
-  background: white;
-  color: black;
-  border-radius: 2px 2px 0 0;
-} */
-
 
 .box {
   width: 90%;
