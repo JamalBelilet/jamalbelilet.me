@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Jamalbelilet - Build modern web applications with React</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/jCarousel.css">
+  <link rel="stylesheet" href="css/theme/console.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/androidstudio.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <link rel="stylesheet" href="./css/highlight/vs.css">
+  <script src="./js/highlight.pack.js"></script>
+  <!-- <script src="./js/highlight-js.js" type="text/javascript"></script>
+	<script>
+		hljs.registerLanguage('js', H_js);
+		hljs.initHighlightingOnLoad();
+	</script> -->
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <!-- ------------ slide 1------------ -->
+        <div class="console large">
+          <p>c:\gdg\algiers&gt;</p>
+          <br>
+          <h2>👩‍💻 for</h2>
+          <h2>non-programmers
+            <span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+          </h2>
+          <h2 class="fragment" data-fragment-index="1">by
+            <img class="angular" src="images/wtm_logo.png">
+            <div class="ng-container">
+              <span class="cursor ng">-</span>
+            </div>
+          </h2>
+        </div>
+        <!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Speaking Code:</h2>
+            <ul>
+              <li>Introduction</li>
+              <li>What you can build with various languages</li>
+              <li>#web_development</li>
+              <li>Common programming concepts</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Introduction</h2>
+            <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>What you can build with various languages</h2>
+            <p>Programming can
+              be done using a variety of computer "languages," such as SQL, Java, Python, and C++.</p>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>#web_development</h2>
+            <p>DescriptionWeb development is the work involved in developing a web site for the Internet or an intranet,
+              blah blah blaah...</p>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Common programming concepts</h2>
+            <p>Basic programming constructs like variables, loops, iterators, string, integers, booleans, arrays,
+              hashes, methods, and
+              user input were covered</p>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Basics <br><small>of</small> Code</h2>
+            <ul>
+              <li>Try toRead();</li>
+              <li>Javascript</li>
+              <li>HTML and CSS</li>
+              <li>Read && Update snippets</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Try toRead();</h2>
+          <pre><code>
+function addNumbers(arrayOfNumbers) {
+  let initialValue = 0;
+  for(let i = 0; i < arrayOfNumbers.length; i++) {
+    initialValue = initialValue + arrayOfNumbers[i];
+  }
+  return initialValue;
+}
+
+let result = addNumbers([1, 3, 4, 5, 6, 99945, -324, 44]);
+console.log(result);
+					</code></pre>
+        </section>
+        <section>
+          <h2>Javascript</h2>
+          <br>
+          <p>JavaScript is the programming language of HTML and the Web</p>
+          <p>JavaScript is easy* to learn</p>
+        </section>
+        <section>
+          <h2>HTML</h2>
+          <pre><code>
+&lt;!DOCTYPE html>
+&lt;html>
+
+  &lt;head>
+    &lt;title>IWD Website&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h1>This is a Heading&lt;/h1>
+    &lt;p>This is a paragraph.&lt;/p>
+  &lt;/body>
+
+&lt;/html>
+					</code></pre>
+        </section>
+        <section>
+          <h2>CSS</h2>
+          <br>
+          <!-- <p>CSS stands for Cascading Style Sheets</p> -->
+          <p>CSS describes how HTML elements are to be displayed on screen</p>
+          <pre><code>
+body {
+  background-color: blue;
+}
+
+p {
+  color: pink;
+}
+					</code></pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Hands <br><small>on</small> HTML</h2>
+            <ul>
+              <li>Setting up your editor</li>
+              <li>Use content tags</li>
+              <li>Create different sections of your website</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Setting up your editor</h2>
+          <p>VS Code / Sublime text</p>
+        </section>
+        <section>
+          <h2>Use content tags</h2>
+          <pre><code>
+&lt;!DOCTYPE> : Defines the document type
+
+&lt;html>: Defines an HTML document
+
+&lt;head>: Defines information about the document
+
+&lt;title>: Defines a title for the document
+
+&lt;body>: Defines the document's body
+
+&lt;h1> to &lt;h6>: Defines HTML headings
+
+&lt;p>: Defines a paragraph
+
+&lt;br>: Inserts a single line break
+
+&lt;hr>: Defines a thematic change in the content
+
+&lt;!--...-->: Defines a comment
+
+&lt;table>: Define a table
+						</code></pre>
+        </section>
+        <section>
+          <h2>Create different sections of your website</h2>
+          <pre><code>
+&lt;header> - Defines a header for a document or a section
+
+&lt;nav> - Defines a container for navigation links
+
+&lt;section> - Defines a section in a document
+
+&lt;article> - Defines an independent self-contained article
+
+&lt;aside> - Defines content aside from the content (like a sidebar)
+
+&lt;footer> - Defines a footer for a document or a section
+						</code></pre>
+        </section>
+        <section>
+          <h2>Layout</h2>
+          <img style="width: 400px; min-height: 500px;" src="images/img_sem_elements.gif">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Makeup <br><small>of HTML:</small> CSS</h2>
+            <ul>
+              <li>Styling properties</li>
+              <li>Connect with HTML</li>
+              <li>Selectors</li>
+              <li>#hands_on</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Styling properties</h2>
+          <pre><code>
+border-radius: 20px;
+color: red;
+background-color: green;
+						</code></pre>
+        </section>
+      </section>
+
+      <section>
+        <div class="console">
+          <h2>Zoom out</h2>
+          <ul>
+            <li>Hosting and domain names</li>
+            <li>Alternatives</li>
+            <li>Desktop, Mobile, Web and Embedded</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Programming for non-programmers</h2>
+            <p>We've learned</p>
+            <ul>
+              <li class="lets-play">
+                <span>Basics of Code</span>
+              </li>
+              <li class="lets-play">
+                <span>Hands on HTML</span>
+              </li>
+              <li class="lets-play">
+                <span>Makeup of HTML: CSS</span>
+              </li>
+              <li class="lets-play">
+                <span>Zoom out</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>what's next?</h2>
+      </section>
+
+      <!-- <section>
+				<h2>Coding the first mock-up</h2>
+				<img src="./images/ui-1.jpg">
+			</section> -->
+      <section>
+        <section>
+
+          <h2>Programming for programmers*</h2>
+          <br>
+          <ul>
+            <li>Editors and* IDEs</li>
+            <li>Options</li>
+            <li>Online Free* Courses & Resources</li>
+          </ul>
+        </section>
+        <section>
+          <h2><small>Online Free*</small></h2>
+          <h2>Courses & Resources</h2>
+          <br>
+          <ul>
+            <li>Codecademy</li>
+            <li>Coursera</li>
+            <li>Udemy</li>
+            <li>edX</li>
+            <li>Khan Academy</li>
+          </ul>
+          <ul>
+            <li>Code.org</li>
+            <li>HTML5 Rocks</li>
+            <li>MIT Open Courseware</li>
+            <li>Code Avengers</li>
+            <li>Hack.pledge()</li>
+          </ul>
+        </section>
+        <!-- <section>
+            <h2>Courses & Resources</h2>
+            <br>
+        </section> -->
+      </section>
+      <!-- <section>
+				<h2>Coding the second mock-up</h2>
+				<img src="./images/ui-2.jpg">
+			</section> -->
+      <section>
+        <h2>Happy Women's <br>Day!</h2>
+      </section>
+      <section>
+        <!-- ------------ slide 1------------ -->
+        <div class="console large">
+          <p>c:\gdg\algiers&gt;</p>
+          <br>
+          <h2>👩‍💻 for</h2>
+          <br>
+          <h2>non-programmers</h2>
+          <h2>by
+            <img class="angular" src="images/wtm_logo.png">
+            <div class="ng-container">
+              <span class="cursor ng">-</span>
+            </div>
+          </h2>
+        </div>
+        <!-- <footer class="footer">
+					<p>GDG Algiers</p>
+					<p>
+						<a href="https://twitter.com/JamalBelilet">@GDGAlgiers</a>
+					</p>
+				</footer> -->
+      </section>
+
+    </div>
+    <!--slides-->
+  </div>
+  <!--revieal-->
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/jCarousel.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      transitionSpeed: 'default', // default/fast/slow
+      slideNumber: true,
+      controls: false,
+      rollingLinks: true,
+      progress: true,
+      fragments: true,
+      showNotes: false,
+      mouseWheel: true,
+      dependencies: [{
+        src: 'plugin/markdown/marked.js'
+      },
+      {
+        src: 'plugin/markdown/markdown.js'
+      },
+      {
+        src: 'plugin/notes/notes.js',
+        async: true
+      },
+      {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      }
+      ]
+    });
+  </script>
+</body>
+
+</html>
