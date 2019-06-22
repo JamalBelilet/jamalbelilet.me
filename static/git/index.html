@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Essentials of Git & Github</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/console.css">
+
+  <link rel="stylesheet" href="lib/css/androidstudio.css">
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <div class="console large">
+          <p>c:\shellmates\club&gt;</p>
+          <h2>Essentials
+            <span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+          </h2>
+          <h2 class="fragment" data-fragment-index="1">of Git
+            <span class="cursor fragment fade-out" data-fragment-index="1">-</span>
+          </h2>
+          <h2 class="fragment" data-fragment-index="1">and
+            <img class="angular" src="images/GitHub-Mark-Light-120px-plus.png">
+            <div class="ng-container">
+              <span class="cursor ng">-</span>
+            </div>
+          </h2>
+        </div>
+        <footer class="footer">
+          <p>Djamaleddine Belilet</p>
+          <p>
+            <a href="https://twitter.com/JamalBelilet">@JamalBelilet</a>
+          </p>
+        </footer>
+      </section>
+
+      <section>
+        <section>
+          <!-- ------------ slide 2------------ -->
+          <div class="console">
+            <h2>Lets Make A Deal</h2>
+            <!-- <div class="tenor-gif-embed" data-postid="12671516" data-share-method="host" data-width="100%"
+                      data-aspect-ratio="1.7785714285714287"><a
+                        href="https://tenor.com/view/iwant-to-make-adeal-deal-favor-serious-daredevil-gif-12671516">IWant To
+                        Make ADeal
+                        Favor GIF</a> from <a href="https://tenor.com/search/iwanttomakeadeal-gifs">Iwanttomakeadeal GIFs</a>
+                    </div>
+                    <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+            <div class="tenor-gif-embed" data-postid="4633360" data-share-method="host" data-width="100%"
+              data-aspect-ratio="1.7999999999999998"><a
+                href="https://tenor.com/view/deal-itsadeal-handshake-truce-gif-4633360">Deal
+                GIF</a> from <a href="https://tenor.com/search/deal-gifs">Deal GIFs</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>OUR DEAL</h2>
+            <ul>
+              <li>Focus on Concepts</li>
+              <li>GUIs are Good!</li>
+              <li>IDEs Integration</li>
+              <li>Don't ask Q</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <div class="console">
+          <h2>TABLE OF CONTENT</h2>
+          <ul>
+            <li>The Whole Picture</li>
+            <li>The Remote Side</li>
+            <li>Local Repository</li>
+            <li>Collaboration Guide</li>
+            <li>Stories and Conventions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2>Git <img class="plain inline" src="images/git.png" /></h2>
+            <p>Git is a distributed version-control system for tracking changes in source code during software
+              development.</p>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Github <img class="plain inline invert" src="images/github.svg" /></h2>
+            <p>GitHub, a subsidiary of Microsoft, is an American web-based hosting service for version control using
+              Git.</p>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Zoom out <img class="plain inline invert" src="images/github.svg" /></h2>
+            <img src="images/the-whole-picture.png" />
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Zoom in <img class="plain inline" src="images/git.png" /></h2>
+            <img src="images/1-remote-vs-local.png" />
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <div class="console">
+          <h2>Quick Setup</h2>
+          <p>We need to install</p>
+          <ul>
+            <li class="lets-play">
+              <span>Git (skip @linux)</span>
+            </li>
+            <li class="lets-play">
+              <span>Text editor (VSCode)</span>
+            </li>
+            <li class="lets-play">
+              <span>Github account</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <section>
+          <div class="console">
+            <h2 class="future">Github: the remote side</h2>
+            <ul>
+              <li>Explore</li>
+              <li>Repositories</li>
+              <li>Issues</li>
+              <li>Create a Repository</li>
+              <li>README.md</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+
+            <h2>HANDS ON</h2>
+            <p>Create a Repository</p>
+            <ul>
+              <li>Title</li>
+              <li>Public vs Private</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+
+            <h2>HANDS ON</h2>
+            <p>Markdown & README</p>
+            <pre><code>
+Headings
+# The largest heading
+## The second largest heading
+
+Bold **text**
+Italic *text*
+
+Lists
+- George Washington
+- John Adams
+- Thomas Jefferson
+
+          </code></pre>
+          </div>
+        </section>
+      </section>
+
+
+      <section>
+        <h2>Q & A questions</h2>
+      </section>
+
+      <section>
+        <section>
+          <h2>Working<br /> with Git</h2>
+          <ul>
+            <li>The basic Flow</li>
+            <li>Initialize a Repository</li>
+            <li>Git Status, log and History</li>
+            <li>Branching</li>
+            <li>Merge and conflict</li>
+            <li>Push and Pull vs Rebase</li>
+          </ul>
+        </section>
+        <section>
+          <h2>The basic Flow: 1. Clone</h2>
+          <img src="images/2-getting-a-remote-repository.png" />
+        </section>
+        <section>
+          <h2>The basic Flow: 2. Staging</h2>
+          <img src="images/3-staging.png" />
+        </section>
+        <section>
+          <h2>The basic Flow: 3. Commit</h2>
+          <img src="images/4-commit.png" />
+        </section>
+        <section>
+          <h2>The basic Flow: 4. Push changes</h2>
+          <img src="images/5-push.png" />
+        </section>
+        <section>
+          <h2>Git Status, log and History</h2>
+        </section>
+        <section>
+          <h2>Branching</h2>
+          <img src="images/7-master-branch.png" />
+        </section>
+        <section>
+          <h2>Merge: Before</h2>
+          <img src="images/before_ff_merge.png" />
+        </section>
+        <section>
+          <h2>Merge: After</h2>
+          <img src="images/ff_merge.png" />
+        </section>
+        <section>
+          <div class="console">
+            <h2>Push and Pull vs Rebase</h2>
+            <ul>
+              <li class="lets-play">
+                <span>git push origin master</span>
+              </li>
+              <li class="lets-play">
+                <span>git pull origin master</span>
+              </li>
+              <li class="lets-play">
+                <span>git pull --rebase origin master</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <div class="console">
+            <h2>Conventions</h2>
+            <p>Commit Messages Part 1:</p>
+            <ul>
+              <li class="lets-play">
+                <span>feat: A new feature</span>
+              </li>
+              <li class="lets-play">
+                <span>fix: A bug fix</span>
+              </li>
+              <li class="lets-play">
+                <span>docs: A documentation change</span>
+              </li>
+              <li class="lets-play">
+                <span>style: A code style change</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Conventions</h2>
+            <p>Commit Messages Part 2:</p>
+            <ul>
+              <li class="lets-play">
+                <span>refactor: A code change that neither fixes a bug or adds a feature</span>
+              </li>
+              <li class="lets-play">
+                <span>perf: A code change that improves performance</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="console">
+            <h2>Conventions</h2>
+            <p>Commit Messages Part 3:</p>
+            <ul>
+              <li class="lets-play">
+                <span>test: When testing your code</span>
+              </li>
+              <li class="lets-play">
+                <span>chore: Changes to the build process or auxiliary tools and libraries</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Stories (Hands-on)</h2>
+        <p>*The next stories are independent flows</p>
+      </section>
+      <section>
+        <section>
+          <h2>#story1</h2>
+          <p>@UserA</p>
+          <ul>
+            <li>Initialize Repository</li>
+            <li>Create Readme.md</li>
+            <li>Fill Readme with a short description</li>
+            <li>Upload changes to Github</li>
+            <li>Add @UserB as a collaborator</li>
+          </ul>
+        </section>
+        <section>
+          <h2>#story1</h2>
+          <p>@UserB</p>
+          <ul>
+            <li>Accept the collaboration invitation!</li>
+            <li>Clone the Repository</li>
+            <li>Update Readme.md</li>
+            <li>Push changes</li>
+          </ul>
+        </section>
+        <section>
+          <h2>#story1</h2>
+          <p>@UserA</p>
+          <ul>
+            <li>Pull changes</li>
+            <li>Check status of the Repository</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>#story2</h2>
+          <p>@UserB</p>
+          <ul>
+            <li>Initialize Repository</li>
+            <li>Create contributing.md</li>
+            <li>Fill contributing.md: code-of-Conduct, conventions...</li>
+          </ul>
+        </section>
+        <section>
+          <h2>#story2</h2>
+          <p>@UserA</p>
+          <ul>
+            <li>Fork the Repository</li>
+            <li>Clone it</li>
+            <li>Create and fill Readme.md</li>
+            <li>Submit a Pull-request</li>
+          </ul>
+        </section>
+        <section>
+          <h2>#story2</h2>
+          <p>@UserB</p>
+          <ul>
+            <li>Merge Pull Request</li>
+            <li>Add User A to a contributors.md file</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Thank you!</h2>
+        </section>
+        <section>
+          <h2>Assisted by</h2>
+          <br />
+          <ul>
+            <li>Abdallah Herzallah</li>
+            <li>Mouloud Sadeg</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <div class="console large">
+          <p>c:\shellmates\club&gt;</p>
+          <h2>Essentials
+            <span class="cursor hide-cursor fade-out">-</span>
+          </h2>
+          <h2>of Git
+            <span class="cursor hide-cursor fade-out">-</span>
+          </h2>
+          <h2>and
+            <img class="angular" src="images/GitHub-Mark-Light-120px-plus.png">
+            <div class="ng-container">
+              <span class="cursor ng">-</span>
+            </div>
+          </h2>
+        </div>
+        <footer class="footer">
+          <p>Djamaleddine Belilet</p>
+          <p>
+            <a href="https://twitter.com/JamalBelilet">@JamalBelilet</a>
+          </p>
+        </footer>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    Reveal.initialize({
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      transitionSpeed: 'default', // default/fast/slow
+      slideNumber: true,
+      controls: false,
+      rollingLinks: true,
+      progress: true,
+      fragments: true,
+      showNotes: false,
+      mouseWheel: true,
+      dependencies: [{
+        src: 'plugin/markdown/marked.js'
+      },
+      {
+        src: 'plugin/markdown/markdown.js'
+      },
+      {
+        src: 'plugin/notes/notes.js',
+        async: true
+      },
+      {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      }
+      ]
+    });
+  </script>
+</body>
+
+</html>
